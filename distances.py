@@ -10,7 +10,7 @@ print('treated rows:', len(treated))
 if treated.shape[0] != 13:
     raise ValueError('lock in.')
 
-with open('data/api_key.txt', 'r') as a:
+with open('data/api_key.env', 'r') as a:
     api_key = a.read().strip('\n')
 
 ROUTES_URL = "https://routes.googleapis.com/distanceMatrix/v2:computeRouteMatrix"

@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-with open('data/api_key.txt', 'r') as a:
+with open('data/api_key.env', 'r') as a:
     api_key = a.read().strip('\n')
 url = 'https://places.googleapis.com/v1/places:searchText'
 headers = {
